@@ -1,0 +1,35 @@
+{% extends 'mainapp/index.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+    <p>
+        {% for img in image_gal %}
+            <a data-fancybox="images" href="{{ img.photo.url }}">
+                <img src="{{ img.photo.url }}" width="15%" height="15%"/>
+
+            </a>
+            <input type="checkbox">
+        {% endfor %}
+
+    </p>
+
+
+
+
+
+    <div id="btn_add_album">
+        <a href="/upload" type="button" class="btn btn-primary btn-lg">Сoхранить альбом</a>
+        <a href="/upload" type="button" class="btn btn-primary btn-lg">Аннотация</a>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class="btn-primary btn-lg">
+        {% csrf_token %}
+        {{ form.annotation }}
+    </form>
+
+{% endblock %}
+
+

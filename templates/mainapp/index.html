@@ -1,0 +1,31 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block header %}
+    <main>
+        <article>
+            <div>
+                <a href="/" type="button" class="btn btn-primary btn-lg">Главная</a>
+                <a href="/gallery" type="button" class="btn btn-primary btn-lg">Галерея</a>
+{#                <a href="/upload" type="button" class="btn btn-primary btn-lg">Загрузка</a>#}
+            </div>
+        </article>
+    </main>
+    <br>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+    <div class="fixed-bottom">
+        <div class="alert alert-primary" role="alert">
+            <span id="footer">Footer in construction..  </span>
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

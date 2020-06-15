@@ -1,0 +1,86 @@
+body {
+    background-image: url('../img/back1.jpg');
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    font-size: 12px;
+}
+
+.flex_parent {
+    display: flex;
+    flex-direction: row;
+
+    float: left;
+    baseline-shift: 100%;
+}.flex_parent2 {
+    display: flex;
+    flex-direction: row;
+
+    float: left;
+    baseline-shift: 100%;
+}
+
+.flex1 {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.flex2 {
+    padding: 20px;
+     width: 100%;
+ }
+
+.flex3 {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.flex4 {
+    padding: 20px;
+     width: 100%;
+ }
+
+
+
+.card {
+    padding:0px;
+    background-color: #7ad5d2;
+    min-height:100px ;
+    color: #111;
+    font-size: 16px;
+}
+
+.slider-container{
+    max-width:1900px;
+    padding: 0px;
+    position: relative;
+    margin: auto;
+}
+
+
+.swiper-container {
+    width: 1700px;
+    height: 15px;
+    padding: 40px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 180px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: page;
+    border-color: #d01515;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: bottom;
+}
